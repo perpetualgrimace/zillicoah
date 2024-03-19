@@ -1,5 +1,3 @@
-$social-dark-bg-color: rgba(16, 9, 42, 0.66);
-
 .social-link {
   @include font-md;
   text-decoration: none;
@@ -7,6 +5,8 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
   padding: 0.1em 1em 0.1em 0.1em;
   margin-left: -0.5em;
   min-height: 2em;
+  color: $black;
+  background-color: $persian;
   transition: color 0.2s ease-out, background-color 0.2s ease-out;
 
   &.icon-only {
@@ -46,21 +46,10 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
     }
   }
 
-  &.dark-theme {
-    color: $off-white;
-    background-color: $social-dark-bg-color;
-    backdrop-filter: blur(3px);
-  }
-
-  &.light-theme {
-    color: $violet;
-    background-color: $off-white;
-  }
-
   &:hover,
   &:focus {
     color: $white;
-    background-color: $grape;
+    background-color: $persian;
 
     svg {
       transform: scale(1.125);

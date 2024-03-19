@@ -5,7 +5,7 @@ import SocialLink from "/components/common/SocialLink";
 import SocialPopup from "/components/common/SocialPopup";
 
 export default function SocialLinkList(props) {
-  const { links, theme, wrapperClass, hideText } = props;
+  const { links, wrapperClass, hideText } = props;
 
   return (
     <ul
@@ -15,25 +15,24 @@ export default function SocialLinkList(props) {
     >
       {links.map((link) =>
         Array.isArray(link) && link.length ? (
-          <SocialPopup theme={theme} key="popup">
+          <SocialPopup key="popup">
             {link.map((nestedLink) =>
-              generateSocialLink(nestedLink, theme, hideText)
+              generateSocialLink(nestedLink, hideText)
             )}
           </SocialPopup>
         ) : (
-          generateSocialLink(link, theme, hideText)
+          generateSocialLink(link, hideText)
         )
       )}
     </ul>
   );
 }
 
-function generateSocialLink(link, theme, hideText) {
+function generateSocialLink(link, hideText) {
   return (
     <SocialLink
       href={link.href}
       Icon={loadIcon(link.icon)}
-      theme={theme}
       hideText={hideText}
       key={link.href}
     >

@@ -1,5 +1,3 @@
-import Quotes from "/data/quotes.json";
-
 import {
   setTitle,
   setDescription,
@@ -9,9 +7,7 @@ import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
 import PressSection from "/components/layout/components/PressSection";
 import GallerySection from "/components/layout/components/GallerySection";
-import QuotesSection from "/components/layout/components/QuotesSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
-import StatsSection from "/components/layout/components/StatsSection";
 import StationsSection from "/components/layout/components/StationsSection";
 
 export default function EPK() {
@@ -34,12 +30,10 @@ export default function EPK() {
           been played on the air in multiple countries.
         </p>
       </ImgTextSection>
-      <StatsSection />
       <StationsSection />
       <PressSection />
       <GallerySection />
       <ShowsSection />
-      <QuotesSection quotes={Quotes.epk} />
     </>
   );
 }

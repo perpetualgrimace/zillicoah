@@ -1,4 +1,3 @@
-import Quotes from "/data/quotes.json";
 import showURLs from "/data/shows.json";
 const { bandsintownLink, songkickLink, facebookEventsLink } = showURLs;
 
@@ -7,7 +6,6 @@ import { setTitle } from "/components/layout/components/Meta";
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
 import MusiciansSection from "/components/layout/components/MusiciansSection";
-import QuotesSection from "/components/layout/components/QuotesSection";
 
 const description =
   "Zillicoah is a genre-bending rock and/or metal band from Asheville, NC. With a sound that mixes big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes, we make music for fans of bands like Thrice, Cave In, A Perfect Circle, and Coheed & Cambria.";
@@ -46,8 +44,6 @@ export default function About() {
           upcoming events — we'd love to see you!
         </p>
       </ImgTextSection>
-
-      <QuotesSection quotes={Quotes.about} />
     </>
   );
 }

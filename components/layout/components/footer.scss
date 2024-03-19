@@ -1,15 +1,7 @@
 .footer {
   margin-top: -6rem;
+  padding-top: 40%;
   padding-bottom: 2.5rem;
-}
-.footer-title {
-  margin-top: $sp-xxl * 2.5;
-  margin-bottom: $sp-xl;
-  font-size: 10vw;
-  line-height: 1.125;
-  color: $peach;
-  opacity: 0.15;
-  text-shadow: 0 2px 47px $black;
 }
 .footer-bg {
   @include absolute-expand;
@@ -33,7 +25,7 @@
 .footer-menu-link {
   display: block;
   padding: 1em;
-  color: $off-white;
+  color: $khaki;
   text-decoration: none;
 
   &:hover,
@@ -42,7 +34,7 @@
   }
 
   &[aria-current] {
-    color: $peach;
+    color: $persian;
     text-decoration: underline;
   }
 }

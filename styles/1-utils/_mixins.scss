@@ -70,7 +70,7 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   line-height: 1.5;
-  color: $off-white;
+  color: $khaki;
   text-shadow: 0 2px 2rem $black;
 }
 
@@ -110,7 +110,11 @@
   box-shadow: 0 1px 12px $shadow;
 }
 
-@mixin fancy-outline($offset: 1px, $color: $grape, $radius: $radius-lg) {
+@mixin fancy-outline(
+  $offset: 1px,
+  $color: $persian,
+  $radius: $radius-lg
+) {
   @include pseudo;
   position: absolute;
   top: -$offset;
@@ -135,5 +139,9 @@
   );
 }
 @mixin tile-gradient() {
-  background-image: linear-gradient(to bottom, $grape 0%, $violet 100%);
+  background-image: linear-gradient(
+    to bottom,
+    $persian 0%,
+    $tobacco 100%
+  );
 }

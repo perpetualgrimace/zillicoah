@@ -1,15 +1,10 @@
 .main {
   overflow: hidden;
-  width: calc(100% - 12px);
-  margin-left: 6px;
+  width: 100%;
 }
 
 .wrapper > :first-child {
   z-index: 1;
-}
-
-.wrapper > section {
-  margin-bottom: 4px;
 }
 
 .padded-section {

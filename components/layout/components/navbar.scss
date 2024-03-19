@@ -51,11 +51,11 @@
   font-weight: $subhead-weight;
 
   &[aria-current="page"] {
-    color: $peach;
+    color: $persian;
   }
 
   &:not([aria-current="page"]) {
-    color: $off-white;
+    color: $khaki;
 
     &:hover,
     &:focus {
@@ -108,7 +108,7 @@
       left: 0;
       right: 0;
       height: 1px;
-      background: $violet;
+      background: $tobacco;
     }
 
     .navbar-menu-bg {
@@ -172,22 +172,22 @@
     padding: 0 1em;
     line-height: $navbar-height;
 
-    &:after {
-      @include pseudo;
-      position: absolute;
-      width: calc(100% - 1em);
-      background: $peach;
-      height: $sp-xxs;
-      left: 0.5em;
-      bottom: 0;
-      transform: scaleY(0);
-      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
-      transform-origin: bottom;
-    }
+    // &:after {
+    //   @include pseudo;
+    //   position: absolute;
+    //   width: calc(100% - 1em);
+    //   background: $persian;
+    //   height: $sp-xxs;
+    //   left: 0.5em;
+    //   bottom: 0;
+    //   transform: scaleY(0);
+    //   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    //   transform-origin: bottom;
+    // }
 
-    &[aria-current="page"]:after {
-      transform: none;
-    }
+    // &[aria-current="page"]:after {
+    //   transform: none;
+    // }
   }
 
   .navbar-menu-bg,
@@ -198,7 +198,7 @@
 
   .navbar-player-wrapper {
     margin-left: auto;
-    width: 337px;
+    width: 300px;
   }
 }
 
@@ -207,7 +207,7 @@
   display: flex;
   align-items: center;
   padding: $sp-sm;
-  color: $off-white;
+  color: $khaki;
   transition: 0.2s ease-out color;
 
   &:hover,

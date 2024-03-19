@@ -31,7 +31,7 @@ export default function SocialPopup(props) {
           aria-pressed={isPopupVisible}
           aria-haspopup
         >
-          <MoreIcon /> Listen on something else
+          <MoreIcon /> Listen elsewhere
         </button>
       </li>
 

@@ -15,10 +15,6 @@ export default function footerSection(props) {
 
   return (
     <footer className="footer padded-section u-text-c">
-      <p className="footer-title u-title u-mb-lg">
-        Wow, this is really loud
-      </p>
-
       <div className="footer-row">
         <div className="footer-email u-mb-xl">
           <h2 className="footer-heading">Booking, etc</h2>
@@ -72,7 +68,11 @@ export default function footerSection(props) {
         </a>
       </p>
 
-      <RetinaImg className="footer-bg" file="bg/footer" extension="jpg" />
+      <RetinaImg
+        className="footer-bg"
+        file="bg/footer-bg"
+        extension="jpg"
+      />
     </footer>
   );
 }

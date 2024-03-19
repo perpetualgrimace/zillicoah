@@ -1,19 +1,11 @@
 export default function SocialLink(props) {
-  const {
-    Icon,
-    href,
-    children,
-    theme = "dark",
-    hideText = false,
-  } = props;
+  const { Icon, href, children, hideText = false } = props;
 
   return (
     <li className="social-item">
       <a
         href={href}
-        className={`social-link ${theme}-theme${
-          hideText ? " icon-only" : ""
-        }`}
+        className={`social-link ${hideText ? " icon-only" : ""}`}
       >
         {Icon || ""}
 

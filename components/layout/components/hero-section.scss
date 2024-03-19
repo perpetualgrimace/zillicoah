@@ -1,31 +1,22 @@
 .hero-section {
   overflow: hidden;
 
-  &:not(.home-hero-section) {
-    display: flex;
-    min-height: calc(12rem + 15vh);
-    padding-bottom: $sp-lg;
-
-    .hero-title {
-      margin: auto auto 0 auto;
-      text-align: center;
-    }
+  .hero-title {
+    margin: auto auto 0 auto;
+    text-align: center;
   }
 }
 
 .hero-title {
-  width: 33.3rem;
   max-width: 100%;
 }
 .hero-subhead {
   display: block;
   margin-top: $sp-md;
 }
-.hero-bg {
-  @include absolute-expand;
-  z-index: -1;
+.hero-img {
+  width: 100%;
   pointer-events: none;
-  object-position: 50% 15%;
 
   &:empty,
   & > * {
