@@ -1,0 +1,6 @@
+// prevent zoom in on mobile
+@media (max-width: 899px) {
+  input, textarea {
+    font-size: 16px !important;
+  }
+}

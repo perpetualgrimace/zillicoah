@@ -1,0 +1,26 @@
+.quotes-section {
+  padding-top: $sp-xl;
+  z-index: 1;
+
+  .epk-wrapper &,
+  .about-wrapper & {
+    @include section-gradient;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: -4rem !important;
+  }
+
+  & + [class*="section"] {
+    padding-top: $sp-xxl * 2;
+  }
+}
+
+.quotes-list {
+  column-gap: 4px;
+  columns: 2;
+
+  @media (min-width: 666px) {
+    columns: 3;
+  }
+}

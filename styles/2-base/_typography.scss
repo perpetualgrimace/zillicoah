@@ -1,0 +1,54 @@
+//////////////////////////////////
+// DOCUMENT SCALE
+//////////////////////////////////
+
+html {
+  font-size: 14px;
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 20px;
+  }
+}
+
+//////////////////////////////////
+// FONT SIZES
+//////////////////////////////////
+
+html {
+  @include body-text;
+}
+
+h1 {
+  @include title-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-text;
+  @include font-xl;
+}
+
+h2 {
+  @include font-lg;
+}
+h3 {
+  @include font-md;
+}
+
+h4,
+h5,
+h6,
+p,
+li {
+  @include font-sm;
+}

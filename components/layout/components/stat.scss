@@ -1,0 +1,21 @@
+.stat {
+  color: $peach;
+
+  svg {
+    display: inline-block;
+    top: -0.2rem;
+    margin-left: -0.5em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+.stat-heading {
+  color: $white;
+  margin-top: $sp-md;
+}
+
+.stat-pre-value {
+  font-weight: $bold-weight;
+  color: $off-white;
+}

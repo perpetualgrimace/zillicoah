@@ -1,0 +1,53 @@
+.stat-tile {
+  @include tile-gradient;
+  flex: 1 1 auto;
+  display: block;
+  padding: $sp-xl $sp-xl 0 $sp-xl;
+  margin: 2px;
+  box-shadow: 0 2px 47px 0 rgba($black, 0.31);
+
+  @media (max-width: 665px) {
+    .stat-list {
+      column-width: 17rem;
+      column-gap: $sp-lg;
+    }
+  }
+
+  &:last-of-type {
+    width: 100%;
+
+    .stat-list {
+      column-width: 17rem;
+      column-gap: $sp-lg;
+    }
+  }
+
+  &:not(:last-of-type) {
+    @media (min-width: 1000px) {
+      max-width: calc(50% - 4px);
+    }
+  }
+
+  & > *:last-child {
+    margin-bottom: $sp-xl;
+  }
+}
+
+.stat-tile-img {
+  margin-bottom: $sp-xl;
+  width: 100%;
+
+  @media (min-width: 666px) {
+    width: 33.333%;
+    float: left;
+    margin-right: $sp-xl;
+  }
+
+  &:not(.stat-tile-album-img) {
+    margin-top: $sp-xxs;
+  }
+}
+
+.stat-tile-album-img + .stat-list {
+  margin-top: -$sp-xs;
+}

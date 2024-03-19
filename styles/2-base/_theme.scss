@@ -1,0 +1,56 @@
+html {
+  background-color: $black;
+  color: $off-white;
+}
+
+a {
+  color: $peach;
+  transition: color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: $aero-light;
+  }
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.u-heading {
+  color: $white;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.125em;
+}
+
+// darkglass theme
+.darkglass {
+  text-decoration: none;
+  background-color: $black;
+  border: 1px solid $violet;
+  border-radius: $radius-md;
+  box-shadow: 0 1px 12px 0 $shadow;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px dotted rgba($aero, 0.5);
+  outline-offset: 3px;
+}
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[tabindex]:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::selection {
+  color: $white;
+  background-color: rgba($peach, 0.6);
+}

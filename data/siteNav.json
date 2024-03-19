@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Home",
+    "route": "/"
+  },
+  {
+    "label": "About",
+    "route": "/about"
+  },
+  {
+    "label": "Press kit",
+    "route": "/epk"
+  }
+]

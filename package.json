@@ -1,0 +1,19 @@
+{
+  "name": "v2.thewelcomingmusic.com",
+  "description": "website for Asheville NC rock & metal band The Welcoming",
+  "author": "James Ferrell",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "open 'http://localhost:3000' && next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.0.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

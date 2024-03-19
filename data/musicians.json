@@ -1,0 +1,30 @@
+[
+  {
+    "name": "James Ferrell",
+    "role": "Lead vocals | Guitars",
+    "bio": "James is a rehabilitated drummer whose mind had to be partially wiped in order to free up enough space for guitar and vocals.",
+    "instagram": "perpetualgrimace",
+    "imgSrc": "james"
+  },
+  {
+    "name": "Spencer Cranfill",
+    "role": "Guitars | Vocals",
+    "bio": "Spencer is capable of playing and enjoying music, sports, and video games — earning him a spot in the elite 1% of the population.",
+    "instagram": "smcranf",
+    "imgSrc": "spencer"
+  },
+  {
+    "name": "Vitor Sá",
+    "role": "Bass",
+    "bio": "Vitor may be the eldest band member, but he reverts to a teenager when it comes to cats, basses, and Apex Legends.",
+    "instagram": "vitorsaphoto",
+    "imgSrc": "vitor"
+  },
+  {
+    "name": "Ken Mcaffee",
+    "role": "Drums",
+    "bio": "Ken loves guitar, the gym, video games, people, misspelling words, and literally any product involving the word “pro.”",
+    "instagram": "rendered_lively",
+    "imgSrc": "ken"
+  }
+]

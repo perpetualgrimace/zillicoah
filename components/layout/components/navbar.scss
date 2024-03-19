@@ -1,0 +1,244 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  @include box-shadow;
+  background-color: $black;
+  // box-shadow: 0 1px 0 $black;
+
+  & + * {
+    margin-top: $navbar-height;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  height: $navbar-height;
+  padding: 0 $sp-md;
+}
+
+.navbar-logo {
+  height: 100%;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  right: -$navbar-link-padding;
+  min-height: min-content;
+}
+
+.navbar-toggle {
+  padding: $sp-sm;
+  margin-left: auto;
+  right: -$sp-sm;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-menu-link {
+  text-decoration: none;
+  font-weight: $subhead-weight;
+
+  &[aria-current="page"] {
+    color: $peach;
+  }
+
+  &:not([aria-current="page"]) {
+    color: $off-white;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+.navbar-player-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 899px) {
+  .navbar-menu {
+    position: fixed;
+    border-radius: 0;
+    border-width: 0 1px 0 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: ($sp-lg + $navbar-height) calc(2vw + #{$sp-lg})
+      ($sp-xl * 1.5);
+    flex-direction: column;
+
+    &.is-open {
+      opacity: 1;
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+
+      .navbar-menu-item {
+        animation: pull-up 0.45s ease-out;
+      }
+
+      .navbar-menu-link:before {
+        animation: pull-right 0.45s ease-out;
+      }
+    }
+
+    &.is-closed {
+      opacity: 0;
+      transform: translateX(100%);
+      z-index: -1;
+    }
+
+    &:after {
+      @include pseudo;
+      position: absolute;
+      top: $navbar-height;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: $violet;
+    }
+
+    .navbar-menu-bg {
+      @include pseudo;
+      @include absolute-expand;
+      position: fixed;
+      background-color: rgba($black, 0.666);
+
+      &.is-open {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+      }
+
+      &.is-closed {
+        opacity: 0;
+        z-index: -1;
+        width: 0px;
+        height: 0px;
+      }
+    }
+
+    .navbar-menu-link {
+      font-size: calc(2vw + #{$sp-xl});
+      width: max-content;
+      line-height: 1.625;
+      flex: 1 0 100%;
+      padding: 0.5em;
+      left: -0.5em;
+      transition: 0.2s ease-out color;
+
+      &[aria-current="page"] {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .navbar-player-wrapper {
+    position: absolute;
+    top: 0.375rem;
+    max-width: 75vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .navbar-menu {
+    width: auto;
+    flex-direction: row;
+    align-items: stretch;
+    background: none;
+    border: none;
+    width: calc(100% - 18.5rem);
+  }
+
+  .navbar-menu-toggle + .navbar-menu-item {
+    margin-left: auto;
+  }
+
+  .navbar-menu-link {
+    display: block;
+    margin: auto;
+    padding: 0 1em;
+    line-height: $navbar-height;
+
+    &:after {
+      @include pseudo;
+      position: absolute;
+      width: calc(100% - 1em);
+      background: $peach;
+      height: $sp-xxs;
+      left: 0.5em;
+      bottom: 0;
+      transform: scaleY(0);
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+      transform-origin: bottom;
+    }
+
+    &[aria-current="page"]:after {
+      transform: none;
+    }
+  }
+
+  .navbar-menu-bg,
+  .navbar-menu-toggle,
+  .navbar-toggle {
+    display: none !important;
+  }
+
+  .navbar-player-wrapper {
+    margin-left: auto;
+    width: 337px;
+  }
+}
+
+.navbar-toggle,
+.navbar-menu-toggle {
+  display: flex;
+  align-items: center;
+  padding: $sp-sm;
+  color: $off-white;
+  transition: 0.2s ease-out color;
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+
+  > svg {
+    width: $font-size-xl;
+    top: -0.5px;
+
+    @media (min-width: 500px) {
+      margin-left: $sp-xxs;
+    }
+
+    > path {
+      fill: currentColor;
+    }
+  }
+}
+
+.navbar-menu-toggle {
+  height: $navbar-height;
+  flex-basis: $navbar-height;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: max-content;
+}
+
+.navbar-menu-item {
+  margin-right: 0;
+  display: flex;
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "href": "https://open.spotify.com/album/69cdXkVgVecRR3vPLzuNVt?si=ohEnXlc0S8eFtdeKWuKblA",
+    "label": "Listen on Spotify",
+    "icon": "Spotify"
+  },
+  {
+    "href": "https://thewelcoming.bandcamp.com/album/neptune-ep",
+    "label": "Listen on Bandcamp",
+    "icon": "Bandcamp"
+  },
+  [
+    {
+      "href": "https://music.apple.com/us/album/neptune-ep/1712540062",
+      "label": "Apple Music",
+      "icon": "AppleMusic"
+    },
+    {
+      "href": "https://music.youtube.com/playlist?list=OLAK5uy_mdSBJm7XnFisgxwxetrTNVxvgN1cVVXGg",
+      "label": "YouTube Music",
+      "icon": "YouTubeMusic"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=BFU81GFjRt0",
+      "label": "YouTube full album",
+      "icon": "YouTube"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=sxs8NIDV8w4&list=OLAK5uy_nqGucL8tFCPAsYFgd9JJ_NdK8C0VD8FWw&ab_channel=TheWelcoming-Topic",
+      "label": "YouTube playlist",
+      "icon": "YouTube"
+    },
+    {
+      "href": "https://listen.tidal.com/album/322577852",
+      "label": "Tidal",
+      "icon": "Tidal"
+    },
+    {
+      "href": "https://music.amazon.com/albums/B0CLBGPZKX",
+      "label": "Amazon Music",
+      "icon": "AmazonMusic"
+    },
+    {
+      "href": "https://www.iheart.com/artist/the-welcoming-33462557/albums/decayed-remade-149043209/",
+      "label": "iHeartRadio",
+      "icon": "IHeartRadio"
+    },
+    {
+      "href": "https://www.pandora.com/artist/the-welcoming/neptune/ALJ2gK7cjpzlXKV",
+      "label": "Pandora",
+      "icon": "Pandora"
+    },
+    {
+      "href": "https://www.deezer.com/us/album/501952561",
+      "label": "Deezer",
+      "icon": "Deezer"
+    }
+  ]
+]

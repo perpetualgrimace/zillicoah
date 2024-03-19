@@ -1,0 +1,125 @@
+.gallery-section {
+  @include section-gradient;
+  padding-top: $sp-xl;
+}
+
+.asset-list {
+  z-index: 1;
+  column-gap: 4px;
+
+  // horizontal overflow layout
+  @media (max-width: 399px) {
+    display: flex;
+    flex-wrap: none;
+    overflow-x: auto;
+
+    .asset-item {
+      flex: 1 0 16rem;
+    }
+    .asset-figure,
+    .asset-link,
+    .asset-img {
+      height: 100%;
+    }
+    .asset-img {
+      object-fit: cover;
+    }
+  }
+
+  // column layout
+  @media (min-width: 400px) and (max-width: 665px) {
+    column-width: auto;
+    columns: 2;
+  }
+  @media (min-width: 666px) and (max-width: 1399px) {
+    column-width: 16rem;
+  }
+  @media (min-width: 1400px) {
+    column-width: auto;
+    columns: 4;
+  }
+}
+
+.asset-item {
+  display: block;
+  margin-bottom: 4px;
+}
+
+// why crop and re-export when you can just hide, am I right? (I'm not)
+.asset-item:nth-of-type(n + 4) .asset-img {
+  top: -1px;
+  transform: scale(1.01);
+}
+
+.asset-link {
+  display: block;
+  overflow: hidden;
+
+  &:after {
+    @include pseudo;
+    @include absolute-expand;
+  }
+
+  .asset-link-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: $sp-sm $sp-md;
+    background-color: rgba($black, 0.666);
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  .asset-img {
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    .asset-img {
+      opacity: 0.25;
+      transform: scale(1.075);
+    }
+    .asset-link-text {
+      opacity: 1;
+      transform: none;
+    }
+    & + .asset-figcaption {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+.asset-img,
+.asset-link-text,
+.asset-figcaption {
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.asset-figcaption {
+  @include absolute-expand;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $sp-md;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  transform: scale(0.75);
+
+  .asset-title {
+    color: $white;
+  }
+
+  .asset-credits {
+    line-height: 1.5;
+  }
+  .asset-location {
+    color: $peach;
+  }
+}

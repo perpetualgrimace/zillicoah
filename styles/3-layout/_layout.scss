@@ -1,0 +1,21 @@
+.main {
+  overflow: hidden;
+  width: calc(100% - 12px);
+  margin-left: 6px;
+}
+
+.wrapper > :first-child {
+  z-index: 1;
+}
+
+.wrapper > section {
+  margin-bottom: 4px;
+}
+
+.padded-section {
+  padding: $sp-lg;
+
+  @media (min-width: 900px) {
+    padding: $sp-xxl * 0.875 $sp-xxl;
+  }
+}

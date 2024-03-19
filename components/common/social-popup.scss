@@ -1,0 +1,68 @@
+$popupPaddingV: calc(2vw + $sp-xl);
+$popupPaddingH: calc(1.5vw + $sp-lg);
+
+.social-popup {
+  @include absolute-expand;
+  position: fixed;
+  padding: $popupPaddingV $popupPaddingH;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: auto;
+  transition: opacity 0.2s ease-out;
+
+  & > * {
+    opacity: 0;
+    transform: scale(0.666);
+  }
+
+  &.is-visible {
+    z-index: 11;
+    opacity: 1;
+    pointer-events: all;
+
+    & > * {
+      opacity: 1;
+      transform: none;
+      transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+      transition-delay: 0.15s;
+    }
+  }
+}
+
+.social-popup-close-button {
+  position: absolute;
+  top: $sp-sm;
+  right: $sp-md;
+
+  &:hover path,
+  &:focus path {
+    fill: $white;
+  }
+}
+
+.social-popup-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  max-width: 30rem;
+}
+.social-popup-list .social-link {
+  width: 100%;
+  margin: 0;
+}
+.social-popup-list .social-item {
+  margin-bottom: 0;
+
+  & + .social-item {
+    margin-top: calc(1vh + $sp-md);
+  }
+}
+
+.social-popup-bg {
+  @include absolute-expand;
+  position: fixed;
+  z-index: -1;
+  background-color: rgba($black, 0.9);
+}

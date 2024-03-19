@@ -1,0 +1,106 @@
+$social-dark-bg-color: rgba(16, 9, 42, 0.66);
+
+.social-link {
+  @include font-md;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 0.1em 1em 0.1em 0.1em;
+  margin-left: -0.5em;
+  min-height: 2em;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+  &.icon-only {
+    display: block;
+    padding: 0;
+    width: 2em;
+    height: 2em;
+  }
+
+  &:not(.icon-only) {
+    display: inline-block;
+    line-height: 2em;
+    padding-left: 2.125em;
+    margin-bottom: $sp-xs;
+
+    svg {
+      position: absolute;
+      left: 0.125em;
+    }
+
+    @media (max-width: 665px) {
+      @include font-lg;
+      display: block;
+      width: calc(100% + 1em);
+      text-align: left;
+      line-height: 2em;
+    }
+  }
+
+  svg {
+    width: 2em;
+    height: 2em;
+    transition: transform 0.1s ease-out;
+
+    path {
+      fill: currentColor;
+    }
+  }
+
+  &.dark-theme {
+    color: $off-white;
+    background-color: $social-dark-bg-color;
+    backdrop-filter: blur(3px);
+  }
+
+  &.light-theme {
+    color: $violet;
+    background-color: $off-white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grape;
+
+    svg {
+      transform: scale(1.125);
+    }
+
+    &[href*="music.amazon.com"] {
+      background-color: #44b5e7;
+    }
+    &[href*="music.apple.com"] {
+      background-color: #fa243c;
+    }
+    &[href*="bandcamp.com"] {
+      background-color: #408294;
+    }
+    &[href*="deezer"] {
+      background-color: #feaa2d;
+    }
+    &[href*="facebook.com"] {
+      background-color: #0866ff;
+    }
+    &[href*="iheart.com"] {
+      background-color: #c6002b;
+    }
+    &[href*="instagram.com"] {
+      background-color: #e4405f;
+    }
+    &[href*="pandora.com"] {
+      background-color: #224099;
+    }
+    &[href*="spotify.com"] {
+      background-color: #1db954;
+    }
+    &[href*="tidal.com"] {
+      background-color: #000;
+    }
+    &[href*="twitter.com"] {
+      background-color: #1d9bf0;
+    }
+    &[href*="youtube.com"] {
+      background-color: #ff0000;
+    }
+  }
+}

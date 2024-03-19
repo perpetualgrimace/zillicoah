@@ -1,0 +1,13 @@
+.shows-section {
+  @include section-gradient;
+  padding-top: $sp-xl;
+}
+
+.shows-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-bottom: -2px;
+}

@@ -1,0 +1,48 @@
+.musician-tile {
+  flex: 1 0 220px;
+  margin: 2px;
+  overflow: hidden;
+
+  @media (min-width: 600px) {
+    flex: 1 0 280px;
+  }
+  @media (min-width: 840px) {
+    flex: 1 0 200px;
+
+    &:nth-child(3) {
+      order: -1;
+    }
+  }
+}
+
+.musician-img {
+  width: 100%;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.musician-tile-text {
+  display: block;
+  margin-top: -$sp-xxl;
+  padding: $sp-lg;
+}
+.musician-role {
+  color: $peach;
+}
+.musician-bio {
+  line-height: 1.25;
+}
+.musician-instagram {
+  svg {
+    transform: scale(0.875);
+    margin-left: -0.5em;
+    transition: transform 0.2s ease-out;
+  }
+  path {
+    fill: currentColor;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    transform: none;
+  }
+}

@@ -1,0 +1,40 @@
+.img-text-section {
+  @include section-gradient;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  p {
+    @include font-md;
+    line-height: 1.5;
+    width: 38rem;
+    max-width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: $sp-md;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  .img-text-img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .img-text-caption {
+    padding: $sp-xl $sp-lg;
+    width: 100%;
+  }
+}
+
+@media (min-width: 666px) {
+  .img-text-img {
+    width: 33%;
+  }
+
+  .img-text-caption {
+    width: 66.666%;
+    padding: $sp-xl $sp-xl * 1.5;
+  }
+}

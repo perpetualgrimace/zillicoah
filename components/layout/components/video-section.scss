@@ -1,0 +1,43 @@
+.video-section {
+  @media (min-width: 1000px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .video-section-caption {
+      flex: 1 0 25%;
+    }
+  }
+}
+
+.video-iframe-wrapper {
+  margin: $sp-lg auto;
+  width: 100%;
+  padding-top: 56.25%; // set height
+  box-shadow: 0 4px 18px 0 rgba($black, 0.28),
+    0 2px 47px 0 rgba($black, 0.31);
+
+  @media (min-width: 1000px) {
+    max-width: 66.6%;
+    padding-top: 36%;
+    margin: 0 0 0 $sp-xxl;
+  }
+}
+
+.video-iframe {
+  @include absolute-expand;
+}
+
+.video-section-bg {
+  @include absolute-expand;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-section-social-list {
+  @media (max-width: 999px) {
+    @include visually-hidden;
+  }
+}
