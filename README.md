@@ -1,1 +1,1 @@
-Website for Asheville NC rock & metal band The Welcoming, built from the ground up with Next.js
+Website for Asheville NC rock band Zillicoah, built from the ground up with Next.js

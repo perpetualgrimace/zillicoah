@@ -25,9 +25,9 @@ export default function footerSection(props) {
           <p>
             <a
               className="footer-email-link u-font-lg"
-              href="mailto:thewelcomingmusic@gmail.com"
+              href="mailto:zillicoahmusic@gmail.com"
             >
-              thewelcomingmusic@gmail.com
+              zillicoahmusic@gmail.com
             </a>
           </p>
         </div>
@@ -66,8 +66,7 @@ export default function footerSection(props) {
       </nav>
 
       <p className="footer-colophon" role="contentinfo">
-        © 2021-{getCurrentYear()} The Welcoming. Website designed & built
-        by{" "}
+        © 2016-{getCurrentYear()} Zillicoah. Website designed & built by{" "}
         <a href="https://jamesferrell.me" target="_blank">
           James Ferrell
         </a>

@@ -56,7 +56,7 @@ export default function Navbar() {
           <RetinaImg
             className="navbar-logo-img"
             file="logo"
-            alt="The Welcoming, home"
+            alt="Zillicoah, home"
           />
         </Link>
 

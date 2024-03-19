@@ -21,7 +21,7 @@ export default function EPK() {
       <HeroSection title="Press Kit" pageSlug="epk" />
       <ImgTextSection title="You won’t be bored" imgSrc="thumbnail/epk-1">
         <p>
-          The Welcoming is a genre-bending rock and/or metal band from
+          Zillicoah is a genre-bending rock and/or metal band from
           Asheville, NC. With a sound that mixes big riffs, soaring vocal
           melodies, and just enough technicality to keep you on your toes,
           we make music for fans of bands like Thrice, Cave In, A Perfect

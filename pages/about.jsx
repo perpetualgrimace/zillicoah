@@ -10,13 +10,13 @@ import MusiciansSection from "/components/layout/components/MusiciansSection";
 import QuotesSection from "/components/layout/components/QuotesSection";
 
 const description =
-  "The Welcoming is a genre-bending rock and/or metal band from Asheville, NC. With a sound that mixes big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes, we make music for fans of bands like Thrice, Cave In, A Perfect Circle, and Coheed & Cambria.";
+  "Zillicoah is a genre-bending rock and/or metal band from Asheville, NC. With a sound that mixes big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes, we make music for fans of bands like Thrice, Cave In, A Perfect Circle, and Coheed & Cambria.";
 
 export default function About() {
   return (
     <>
       {setTitle("About")}
-      <HeroSection title="About The Welcoming" pageSlug="about" />
+      <HeroSection title="About Zillicoah" pageSlug="about" />
       <ImgTextSection
         title="Don’t call us a p**g band"
         imgSrc="thumbnail/about-1"

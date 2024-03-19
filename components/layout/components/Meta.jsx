@@ -23,7 +23,7 @@ export default function Meta(props) {
 
       <meta
         name="keywords"
-        content="the welcoming, asheville, rock, metal, post-hardcore, hard rock, prog rock, progressive, band, decayed, remade, neptune"
+        content="Zillicoah, asheville, rock, metal, post-hardcore, hard rock, prog rock, progressive, band, decayed, remade, neptune"
       />
 
       <meta property="og:type" content="website" />
@@ -47,8 +47,8 @@ export default function Meta(props) {
   );
 }
 
-const baseUrl = "https://thewelcomingmusic.com";
-const defaultTitle = "The Welcoming";
+const baseUrl = "https://zillicoahmusic.com";
+const defaultTitle = "Zillicoah";
 const defaultImgUrl = `${baseUrl}/opengraph-image.jpg`;
 const defaultDescription =
   "Genre-bending rock and/or metal band from Asheville, NC. We mix big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes.";

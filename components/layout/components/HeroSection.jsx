@@ -7,18 +7,6 @@ export default function HeroSection(props) {
       className={`padded-section hero-section ${pageSlug}-hero-section`}
       id={slug || "hero-section"}
     >
-      <h1 className="u-title hero-title u-mb-lg">
-        {title || "missing `title` prop"}
-        {subhead && (
-          <span className="hero-subhead u-subhead u-font-lg">
-            {" "}
-            {subhead}
-          </span>
-        )}
-      </h1>
-
-      {children}
-
       {pageSlug === "home" ? (
         <picture className="hero-bg">
           <source
@@ -53,6 +41,18 @@ export default function HeroSection(props) {
           extension="jpg"
         />
       )}
+
+      <h1 className="u-title hero-title u-mb-lg">
+        {title || "missing `title` prop"}
+        {subhead && (
+          <span className="hero-subhead u-subhead u-font-lg">
+            {" "}
+            {subhead}
+          </span>
+        )}
+      </h1>
+
+      {children}
     </section>
   );
 }
