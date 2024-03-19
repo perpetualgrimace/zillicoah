@@ -5,6 +5,7 @@ import DeezerIcon from "/components/icons/social/DeezerIcon.svg";
 import FacebookIcon from "/components/icons/social/FacebookIcon.svg";
 import IHeartRadioIcon from "/components/icons/social/IHeartRadioIcon.svg";
 import InstagramIcon from "/components/icons/social/InstagramIcon.svg";
+import ThreadsIcon from "/components/icons/social/ThreadsIcon.svg";
 import PandoraIcon from "/components/icons/social/PandoraIcon.svg";
 import SpotifyIcon from "/components/icons/social/SpotifyIcon.svg";
 import TidalIcon from "/components/icons/social/TidalIcon.svg";
@@ -20,6 +21,7 @@ export default function loadIcon(icon) {
   else if (icon === "Facebook") return <FacebookIcon />;
   else if (icon === "IHeartRadio") return <IHeartRadioIcon />;
   else if (icon === "Instagram") return <InstagramIcon />;
+  else if (icon === "Threads") return <ThreadsIcon />;
   else if (icon === "Pandora") return <PandoraIcon />;
   else if (icon === "Spotify") return <SpotifyIcon />;
   else if (icon === "Tidal") return <TidalIcon />;

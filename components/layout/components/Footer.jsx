@@ -17,7 +17,7 @@ export default function footerSection(props) {
     <footer className="footer padded-section u-text-c">
       <div className="footer-row">
         <div className="footer-email u-mb-xl">
-          <h2 className="footer-heading">Booking, etc</h2>
+          <h2 className="footer-heading">Booking</h2>
           <p>
             <a
               className="footer-email-link u-font-lg"
@@ -29,19 +29,18 @@ export default function footerSection(props) {
         </div>
 
         <div className="footer-socials u-mb-xl">
-          <h2 className="footer-heading">All the links</h2>
+          <h2 className="footer-heading">Follow us</h2>
 
           <SocialLinkList
             wrapperClass="footer-social-list"
             links={SocialLinks}
-            theme="light"
             hideText={true}
           />
         </div>
 
         <RetinaImg
-          className="footer-face u-mh-auto u-mb-md"
-          file="vitor-loud"
+          className="footer-logo u-mh-auto u-mb-md"
+          file="logo-square"
         />
       </div>
 

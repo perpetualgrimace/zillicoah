@@ -15,7 +15,7 @@
   justify-content: center;
 
   .social-item:not(:last-child) {
-    margin-right: $sp-lg;
+    margin-right: $sp-md;
   }
 }
 
@@ -52,8 +52,9 @@
       margin-left: auto;
     }
 
-    .footer-face {
+    .footer-logo {
       @include absolute-horizontal-center;
+      margin-top: -1.25rem;
     }
   }
 }

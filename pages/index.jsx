@@ -18,8 +18,9 @@ export default function Home() {
         pageSlug="home"
       >
         <SocialLinkList
-          wrapperClass="home-hero-social-list"
+          wrapperClass="hero-social-list"
           links={SocialLinks}
+          hideText={true}
         />
       </HeroSection>
 

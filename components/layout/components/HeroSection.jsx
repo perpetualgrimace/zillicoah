@@ -9,17 +9,19 @@ export default function HeroSection(props) {
     >
       <RetinaImg className="hero-img" file="hero/hero" extension="jpg" />
 
-      <h1 className="u-title hero-title u-mb-lg">
-        {title || "missing `title` prop"}
-        {subhead && (
-          <span className="hero-subhead u-subhead u-font-lg">
-            {" "}
-            {subhead}
-          </span>
-        )}
-      </h1>
+      <div className="padded-section">
+        <h1 className="u-title hero-title u-mb-lg">
+          {title || "missing `title` prop"}
+          {subhead && (
+            <span className="hero-subhead u-subhead u-font-lg">
+              {" "}
+              {subhead}
+            </span>
+          )}
+        </h1>
 
-      {children}
+        {children}
+      </div>
     </section>
   );
 }

@@ -1,6 +1,10 @@
 .hero-section {
   overflow: hidden;
 
+  .padded-section {
+    padding-top: 0;
+  }
+
   .hero-title {
     margin: auto auto 0 auto;
     text-align: center;
@@ -25,45 +29,11 @@
   }
 }
 
-.home-hero-section {
-  min-height: calc(25rem + 10vh);
+.hero-social-list {
+  display: flex;
+  justify-content: center;
 
-  .hero-bg > * {
-    object-position: 85% 66.6%;
-  }
-
-  .hero-title {
-    padding-bottom: $sp-xxl;
-  }
-
-  .hero-subhead {
-    letter-spacing: 8px;
-  }
-
-  @media (max-width: 665px) {
-    min-height: calc(100vh - #{$navbar-height});
-    display: flex;
-    flex-direction: column;
-
-    .social-link-list {
-      text-align: right;
-    }
-    .social-link {
-      display: inline-block;
-      width: auto;
-    }
-
-    .hero-title {
-      margin-bottom: auto;
-    }
-
-    .hero-bg > * {
-      object-fit: cover;
-      object-position: 66.6% 100%;
-    }
-  }
-  // tall ass screens
-  @media (max-aspect-ratio: 5/8) {
-    min-height: 70vh;
+  .social-item:not(:last-of-type) {
+    margin-right: $sp-md;
   }
 }

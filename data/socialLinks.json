@@ -1,19 +1,8 @@
 [
   {
-    "href": "https://open.spotify.com/artist/78rZxY5ov2LunHaBHNDLxb",
-    "label": "Listen on Spotify",
-    "icon": "Spotify"
-  },
-  {
     "href": "https://zillicoah.bandcamp.com",
     "label": "Support us on Bandcamp",
     "icon": "Bandcamp"
-  },
-  {
-    "href": "https://www.twitter.com/the_welcoming",
-    "label": "Get trolled on Twitter",
-    "smallText": "(we don't call it X)",
-    "icon": "Twitter"
   },
   {
     "href": "https://www.instagram.com/zillicoahmusic",
@@ -21,13 +10,13 @@
     "icon": "Instagram"
   },
   {
-    "href": "https://www.youtube.com/@zillicoahmusic",
-    "label": "Performances on YouTube",
-    "icon": "YouTube"
+    "href": "https://open.spotify.com/artist/78rZxY5ov2LunHaBHNDLxb",
+    "label": "Listen on Spotify",
+    "icon": "Spotify"
   },
   {
-    "href": "https://www.facebook.com/zillicoahmusic",
-    "label": "Leftovers on Facebook",
-    "icon": "Facebook"
+    "href": "https://www.youtube.com/@zillicoahmusic",
+    "label": "Watch us on YouTube",
+    "icon": "YouTube"
   }
 ]

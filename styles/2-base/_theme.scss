@@ -9,7 +9,7 @@ a {
 
   &:hover,
   &:focus {
-    color: $aero-light;
+    color: $persian-light;
   }
 }
 
@@ -41,7 +41,7 @@ a {
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px dotted rgba($aero, 0.5);
+  outline: 3px dotted rgba($persian, 0.5);
   outline-offset: 3px;
 }
 a:focus:not(:focus-visible),

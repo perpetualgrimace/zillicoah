@@ -8,6 +8,10 @@
     "route": "/about"
   },
   {
+    "label": "Store",
+    "route": "https://zillicoah.bandcamp.com/merch"
+  },
+  {
     "label": "Press kit",
     "route": "/epk"
   }

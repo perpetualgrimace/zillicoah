@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import loadIcon from "/helpers/loadIcon";
 import SocialLink from "/components/common/SocialLink";
 import SocialPopup from "/components/common/SocialPopup";
