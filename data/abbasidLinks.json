@@ -1,0 +1,44 @@
+[
+  {
+    "href": "https://open.spotify.com/album/7ERUlMGiJOe5Ik7ijfhjOi?si=X5Mmx3tdQ8WwBEt342X9Ig",
+    "label": "Listen on Spotify",
+    "icon": "Spotify"
+  },
+  {
+    "href": "https://zillicoah.bandcamp.com/album/abbasid",
+    "label": "Listen on Bandcamp",
+    "icon": "Bandcamp"
+  },
+  [
+    {
+      "href": "https://music.apple.com/us/album/abbasid-ep/1601679194",
+      "label": "Apple Music",
+      "icon": "AppleMusic"
+    },
+    {
+      "href": "https://music.youtube.com/playlist?list=OLAK5uy_n0fy2ApfzcSAfJ4mm-e-Z5A5AJDOpJfXU",
+      "label": "YouTube Music",
+      "icon": "YouTubeMusic"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=YfeHcUej1hU&list=OLAK5uy_knee7Tyg5kH-zCoQ7x3HxFYULbCj1QEDM&ab_channel=Zillicoah-Topic",
+      "label": "YouTube playlist",
+      "icon": "YouTube"
+    },
+    {
+      "href": "https://tidal.com/browse/album/210153370",
+      "label": "Tidal",
+      "icon": "Tidal"
+    },
+    {
+      "href": "https://amazon.com/music/player/albums/B09P1TQLC9",
+      "label": "Amazon Music",
+      "icon": "AmazonMusic"
+    },
+    {
+      "href": "https://www.iheart.com/artist/zillicoah-37296557/albums/abbasid-154826893/",
+      "label": "iHeartRadio",
+      "icon": "IHeartRadio"
+    }
+  ]
+]

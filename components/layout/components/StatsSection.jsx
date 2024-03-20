@@ -3,7 +3,7 @@ import Stats from "/data/stats.json";
 import Stat from "/components/layout/components/Stat";
 import StatTile from "/components/layout/components/StatTile";
 
-const { neptune, decayedRemade, followers } = Stats;
+const { neptune, Abbasid, followers } = Stats;
 const {
   spotifyListeners,
   twitterFollowers,
@@ -29,11 +29,11 @@ export default function StatsSection() {
 
       <StatTile
         title="Decayed | Remade"
-        subhead={makeReleaseDate(decayedRemade.releaseDate)}
+        subhead={makeReleaseDate(Abbasid.releaseDate)}
         imgSrc="artwork/decayed-remade"
         imgClass="stat-tile-album-img stat-tile-img"
       >
-        {makeAlbumTile(decayedRemade)}
+        {makeAlbumTile(Abbasid)}
       </StatTile>
 
       <StatTile imgSrc="thumbnail/epk-2" imgClass="stat-tile-img">

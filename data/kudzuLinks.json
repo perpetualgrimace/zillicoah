@@ -1,0 +1,54 @@
+[
+  {
+    "href": "https://open.spotify.com/album/2ZSDBcgigsfowT7Kn8lwJ6?si=WCs8OXP2QEWIc4sfPjfd6g  ",
+    "label": "Listen on Spotify",
+    "icon": "Spotify"
+  },
+  {
+    "href": "https://zillicoah.bandcamp.com/album/kudzu",
+    "label": "Listen on Bandcamp",
+    "icon": "Bandcamp"
+  },
+  [
+    {
+      "href": "https://music.apple.com/us/album/kudzu/1701300081",
+      "label": "Apple Music",
+      "icon": "AppleMusic"
+    },
+    {
+      "href": "https://music.youtube.com/playlist?list=OLAK5uy_kN7lCFtfO_smne6gHi4xewNcFggW_SP7Y",
+      "label": "YouTube Music",
+      "icon": "YouTubeMusic"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=k8AtkvsYxZk&list=OLAK5uy_lUDuUr_1K1s6Yqlt1Aw63_O7qMz657VVk&ab_channel=Zillicoah-Topic",
+      "label": "YouTube playlist",
+      "icon": "YouTube"
+    },
+    {
+      "href": "https://tidal.com/browse/album/309383905",
+      "label": "Tidal",
+      "icon": "Tidal"
+    },
+    {
+      "href": "https://amazon.com/music/player/albums/B0CDT35SKR",
+      "label": "Amazon Music",
+      "icon": "AmazonMusic"
+    },
+    {
+      "href": "https://www.iheart.com/artist/zillicoah-37296557/albums/kudzu-227846758/",
+      "label": "iHeartRadio",
+      "icon": "IHeartRadio"
+    },
+    {
+      "href": "https://www.pandora.com/artist/zillicoah/kudzu/AL9qr7zc9qJd3fJ",
+      "label": "Pandora",
+      "icon": "Pandora"
+    },
+    {
+      "href": "https://www.deezer.com/us/album/473017875",
+      "label": "Deezer",
+      "icon": "Deezer"
+    }
+  ]
+]

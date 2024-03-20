@@ -15,9 +15,7 @@ export default function DefaultLayout(props) {
       <Navbar />
 
       <main className="main" id="#main" tabIndex="-1">
-        <div className={`${slug}-wrapper wrapper u-pb-xl`}>
-          {children}
-        </div>
+        <div className={`${slug}-wrapper wrapper`}>{children}</div>
       </main>
 
       <Footer />

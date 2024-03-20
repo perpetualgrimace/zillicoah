@@ -1,6 +1,6 @@
 import SocialLinks from "/data/socialLinks.json";
-import NeptuneLinks from "/data/neptuneLinks.json";
-import DecayedRemadeLinks from "/data/decayedRemadeLinks.json";
+import KudzuLinks from "/data/KudzuLinks.json";
+import AbbasidLinks from "/data/AbbasidLinks.json";
 
 import HeroSection from "/components/layout/components/HeroSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
@@ -27,27 +27,27 @@ export default function Home() {
       <ShowsSection />
 
       <AlbumSection
-        title="Neptune EP"
+        title="Kudzu"
         subhead="Out now"
-        imgSrc="neptune"
-        bgImgSrc="neptune-blue"
-        links={NeptuneLinks}
+        imgSrc="kudzu"
+        bgImgSrc="kudzu-bg"
+        links={KudzuLinks}
       />
 
       <VideoSection
-        title="The Making of Neptune"
-        subhead="Docuseries"
-        videoUrl="https://www.youtube.com/watch?v=kp-Ybvr60W4&list=PL2OXkh0m_R5ykVrouKOwIC-gTso42KaLB"
-        embedUrl="https://www.youtube.com/embed/kp-Ybvr60W4?si=A6gfbWqHkW3m_5Fn"
-        bgImgSrc="neptune-purple"
+        title="Lobera"
+        subhead="Official music video"
+        videoUrl="https://www.youtube.com/watch?v=QtaW6OgZye4"
+        embedUrl="https://www.youtube.com/embed/QtaW6OgZye4"
+        bgImgSrc="lobera-bg"
       />
 
       <AlbumSection
-        title="Decayed | Remade"
-        subhead="The debut album"
-        imgSrc="decayed-remade"
-        bgImgSrc="decayed-remade"
-        links={DecayedRemadeLinks}
+        title="Abbasid"
+        subhead="The debut EP"
+        imgSrc="abbasid"
+        bgImgSrc="abbasid-bg"
+        links={AbbasidLinks}
       />
     </>
   );

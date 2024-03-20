@@ -15,15 +15,12 @@ export default function Meta(props) {
         content="width=device-width, initial-scale=1"
       />
 
-      <meta
-        name="description"
-        content={`${defaultDescription} For fans of bands like Thrice, Cave In, A Perfect Circle, Coheed & Cambria.`}
-      />
+      <meta name="description" content={defaultDescription} />
       <meta name="twitter:description" content={defaultDescription} />
 
       <meta
         name="keywords"
-        content="Zillicoah, asheville, rock, metal, post-hardcore, hard rock, prog rock, progressive, band, decayed, remade, neptune"
+        content="Zillicoah, asheville, post-punk, rock, folk, alternative rock, alt rock, 90s, Appalachian, Appalachia, band"
       />
 
       <meta property="og:type" content="website" />
@@ -51,7 +48,7 @@ const baseUrl = "https://zillicoahmusic.com";
 const defaultTitle = "Zillicoah";
 const defaultImgUrl = `${baseUrl}/opengraph-image.jpg`;
 const defaultDescription =
-  "Genre-bending rock and/or metal band from Asheville, NC. We mix big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes.";
+  "Zillicoah is a post-punk trio incorporating elements of Post-Hardcore, Folk, and Alternative Rock to create an electrified, enigmatic sound.";
 
 function generateTitle(pageTitle) {
   let title = defaultTitle;
