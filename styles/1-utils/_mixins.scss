@@ -51,24 +51,28 @@
 @mixin body-text {
   font-family: $body-font;
   font-weight: $body-weight;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.0125em;
 }
 
 @mixin title-text {
   font-family: $title-font;
-  font-size: $font-size-xl;
+  font-size: $font-size-xl * 0.75;
   font-weight: $title-weight;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 0.05em;
   line-height: 1.25;
   text-shadow: 0 2px 2rem $black;
+
+  @media (min-width: 600px) {
+    font-size: $font-size-xl;
+  }
 }
 
 @mixin subhead-text {
   font-family: $subhead-font;
   font-weight: $subhead-weight;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+  text-transform: initial;
+  letter-spacing: 0.0125em;
   line-height: 1.5;
   color: $khaki;
   text-shadow: 0 2px 2rem $black;
@@ -77,7 +81,7 @@
 @mixin heading-text {
   font-weight: $bold-weight;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.05em;
   margin-bottom: $sp-md;
 }
 
@@ -129,19 +133,4 @@
   opacity: 0;
   transition: all 0.2s ease-out;
   transition-property: opacity, box-shadow, border-color;
-}
-
-@mixin section-gradient {
-  background-image: radial-gradient(
-    ellipse at top,
-    #10092a 18%,
-    $black 100%
-  );
-}
-@mixin tile-gradient() {
-  background-image: linear-gradient(
-    to bottom,
-    $persian 0%,
-    $tobacco 100%
-  );
 }

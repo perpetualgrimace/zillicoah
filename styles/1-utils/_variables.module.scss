@@ -2,28 +2,26 @@
 // TYPOGRAPHY
 //////////////////////////////////
 
-$body-font: "Lato", -apple-system, BlinkMacSystemFont, avenir next, avenir,
-  helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-  sans-serif;
+$body-font: "Arsenal", optima, sans-serif;
 $title-font: $body-font;
 $subhead-font: $body-font;
 
 $body-weight: 400;
 $bold-weight: 700;
-$title-weight: 900;
+$title-weight: 700;
 $subhead-weight: 700;
 
-$font-size-xl: 1.6rem; // 32px
-$font-size-lg: 1.3rem; // 26px
-$font-size-md: 1rem; // 20px
-$font-size-sm: 0.8rem; // 16px
-$font-size-xs: 0.5rem; // 10px
+$font-size-xl: 3.3rem; // 66px
+$font-size-lg: 1.7rem; // 34px
+$font-size-md: 1.4rem; // 28px
+$font-size-sm: 1.1rem; // 22px
+$font-size-xs: 0.8rem; // 16px
 
 //////////////////////////////////
 // COLORS
 //////////////////////////////////
 
-$white: #ffffff;
+$white: #efeff0;
 $khaki: #b5a398;
 $persian: #df854b;
 $persian-light: #f0b189;

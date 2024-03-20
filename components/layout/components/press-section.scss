@@ -1,5 +1,4 @@
 .press-section {
-  @include section-gradient;
   padding-top: $sp-xl;
   z-index: 1;
 }
@@ -18,7 +17,6 @@
 }
 
 .press-item {
-  @include tile-gradient;
   display: flex;
   flex-direction: column;
   padding: $sp-lg;

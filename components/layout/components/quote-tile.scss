@@ -1,5 +1,4 @@
 .quote-tile {
-  @include tile-gradient;
   display: block;
   break-inside: avoid;
   padding: $sp-md $sp-lg $sp-lg $sp-lg;

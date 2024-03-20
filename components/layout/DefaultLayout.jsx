@@ -9,7 +9,7 @@ export default function DefaultLayout(props) {
     <div className={`${slug}-layout default-layout`}>
       <Meta
         pageTitle={title}
-        description="Asheville NC band exploring the gray area between rock and metal"
+        description="Appalachian post-punk with undeniable 90s influence"
       />
 
       <Navbar />

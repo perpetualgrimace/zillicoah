@@ -1,9 +1,10 @@
 .social-link {
-  @include font-md;
+  @include font-sm;
+  @include subhead-text;
   text-decoration: none;
   border-radius: 2em;
   padding: 0.1em 1em 0.1em 0.1em;
-  margin-left: -0.5em;
+  margin-left: -0.125em;
   min-height: 2em;
   color: $black;
   background-color: $persian;
@@ -29,7 +30,7 @@
     }
 
     @media (max-width: 665px) {
-      @include font-lg;
+      @include font-md;
       display: block;
       width: calc(100% + 1em);
       text-align: left;

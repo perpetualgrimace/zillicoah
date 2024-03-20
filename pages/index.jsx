@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <HeroSection
-        title="Exploring the gray area between rock and metal"
-        subhead="In Western NC and beyond"
+        title="A new sound for the nostalgic"
+        subhead="Appalachian post-punk with undeniable 90s influence"
         pageSlug="home"
       >
         <SocialLinkList
