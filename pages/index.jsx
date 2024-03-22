@@ -1,6 +1,6 @@
 import SocialLinks from "/data/socialLinks.json";
-import KudzuLinks from "/data/KudzuLinks.json";
-import AbbasidLinks from "/data/AbbasidLinks.json";
+import KudzuLinks from "/data/kudzuLinks.json";
+import AbbasidLinks from "/data/abbasidLinks.json";
 
 import HeroSection from "/components/layout/components/HeroSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
