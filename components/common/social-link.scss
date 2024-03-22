@@ -19,22 +19,17 @@
   }
 
   &:not(.icon-only) {
+    @include font-xs;
     display: inline-block;
-    line-height: 2em;
-    padding-left: 2.125em;
-    margin-bottom: $sp-xs;
+    line-height: 2.5em;
+    padding-left: 3em;
+    margin-bottom: $sp-md;
 
     svg {
       position: absolute;
-      left: 0.125em;
-    }
-
-    @media (max-width: 665px) {
-      @include font-md;
-      display: block;
-      width: calc(100% + 1em);
-      text-align: left;
-      line-height: 2em;
+      top: 0.3em;
+      left: 0.5em;
+      transform: scale(1.5);
     }
   }
 
