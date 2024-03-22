@@ -1,0 +1,46 @@
+.show-item:not(:last-child) {
+  margin-bottom: $sp-sm;
+}
+
+.show-link {
+  padding: $sp-md;
+  margin: -$sp-md;
+}
+
+.show-link,
+.show-link > span {
+  display: block;
+  max-width: max-content;
+}
+
+.show-link > span {
+  transition: 0.2s ease-out color;
+}
+
+.show-link {
+  text-decoration: none;
+
+  .show-date {
+    color: $persian;
+    text-decoration: underline;
+  }
+
+  .show-meta {
+    color: $khaki;
+    text-decoration: none;
+  }
+
+  .show-meta-separator {
+    color: $persian;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    & > .show-date {
+      color: $persian-light;
+    }
+    & > .show-meta {
+      color: $white;
+    }
+  }
+}

@@ -1,12 +1,15 @@
 .shows-section {
-  padding-top: $sp-xl;
+  padding-top: 0;
 }
+.shows-section-inner {
+  padding-top: $sp-xl;
+  border-top: 4px solid $tobacco;
 
-.shows-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: -3px;
-  margin-right: -3px;
-  margin-bottom: -2px;
+  @media (min-width: 720px) {
+    display: flex;
+
+    .shows-section-title {
+      margin-right: $sp-xxl;
+    }
+  }
 }
