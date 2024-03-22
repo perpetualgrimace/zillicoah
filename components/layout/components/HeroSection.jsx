@@ -7,13 +7,17 @@ export default function HeroSection(props) {
       className={`hero-section ${pageSlug}-hero-section`}
       id={slug || "hero-section"}
     >
-      <RetinaImg className="hero-img" file="hero/hero" extension="jpg" />
+      <RetinaImg
+        className="hero-img u-mb-lg"
+        file="hero/hero"
+        extension="jpg"
+      />
 
       <div className="padded-section">
         <h1 className="u-title hero-title u-mb-lg">
           {title || "missing `title` prop"}
           {subhead && (
-            <span className="hero-subhead u-subhead u-font-lg">
+            <span className="hero-subhead u-subhead u-font-lg u-mb-md">
               {" "}
               {subhead}
             </span>

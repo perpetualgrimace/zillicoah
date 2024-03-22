@@ -4,7 +4,6 @@
   left: 0;
   right: 0;
   z-index: 10;
-  @include box-shadow;
   background-color: $black;
   // box-shadow: 0 1px 0 $black;
 
@@ -20,6 +19,11 @@
   justify-content: space-between;
   height: $navbar-height;
   padding: 0 $sp-md;
+
+  @media (min-width: 1200px) {
+    max-width: calc(100% - 5rem);
+    left: 2.25rem;
+  }
 }
 
 .navbar-logo {

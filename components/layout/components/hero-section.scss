@@ -24,8 +24,18 @@
 
   &:empty,
   & > * {
-    height: 100%;
+    min-height: 44.5vw;
     object-fit: cover;
+
+    @media (min-width: 1200px) {
+      min-height: calc(44.5vw - $sp-xxl);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    max-width: calc(100% - #{$sp-xxl * 2});
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
