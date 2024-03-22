@@ -1,60 +1,35 @@
-import showURLs from "/data/shows.json";
-const { bandsintownLink, songkickLink, facebookEventsLink } = showURLs;
-
 import { setTitle } from "/components/layout/components/Meta";
 
 import HeroSection from "/components/layout/components/HeroSection";
-import ImgTextSection from "/components/layout/components/ImgTextSection";
-import MusiciansSection from "/components/layout/components/MusiciansSection";
-
-const description =
-  "Zillicoah is a genre-bending rock and/or metal band from Asheville, NC. With a sound that mixes big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes, we make music for fans of bands like Thrice, Cave In, A Perfect Circle, and Coheed & Cambria.";
+import ShowsSection from "/components/layout/components/ShowsSection";
+import TextSection from "/components/layout/components/TextSection";
 
 export default function About() {
   return (
     <>
       {setTitle("About")}
       <HeroSection title="About Zillicoah" pageSlug="about" />
-      <ImgTextSection
-        title="Don’t call us a p**g band"
-        imgSrc="thumbnail/about-1"
-      >
-        <p>{description}</p>
-      </ImgTextSection>
-
-      <MusiciansSection />
-
-      <ImgTextSection
-        title="How it started | How it's going"
-        imgSrc="thumbnail/about-2"
-      >
-        <p>
-          It began with the release of the solo album, Decayed | Remade in
-          late 2021. The album's unique and compelling sound quickly
-          attracted the current lineup, and we've been working together to
-          both expand and focus our sound ever since, resulting in the
-          release of Neptune in late 2023.
+      <TextSection>
+        <p className="u-subhead">
+          Zillicoah is a post-punk trio helmed by guitarist and songwriter
+          Rome Widenhouse with Andrew Breeden (bass) and
+          Brandon Ball (drums).
         </p>
         <p>
-          We've brought our intense live show to multiple states and
-          cities already, and we have no plans to stop. Follow our
-          {generateOutboundLink(songkickLink, "Songkick")},
-          {generateOutboundLink(bandsintownLink, "Bandsintown")}, or
-          {generateOutboundLink(facebookEventsLink, "Facebook page")} for
-          upcoming events — we'd love to see you!
+          Zillicoah incorporates elements of Post-Hardcore, Folk, and
+          Alternative Rock to create an electrified, enigmatic sound.
+          Since the band’s inception in 2020, Zillicoah has released a
+          string of EPs and Singles.
         </p>
-      </ImgTextSection>
-    </>
-  );
-}
-
-function generateOutboundLink(href, text) {
-  return (
-    <>
-      {" "}
-      <a href={href} target="_blank">
-        {text}
-      </a>
+        <p>
+          Zillicaoh’s debut LP, Kudzu, was released in August of 2023,
+          accompanied by a music video for the third single, Lobera.
+          Zillicoah’s sophomore album has been independently recorded and
+          is slated for release in late 2024. The band is currently based
+          in Asheville, NC.
+        </p>
+      </TextSection>
+      <ShowsSection />
     </>
   );
 }
