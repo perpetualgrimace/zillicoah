@@ -33,10 +33,13 @@ export default function PressSection() {
 function generatePressItem(format, url, title, date) {
   return (
     <li className="press-item" key={title}>
-      <span className="press-format u-title u-font-sm u-block u-mb-sm">
-        {format !== "Album review" ? `${format} review` : format}
+      <span className="press-format u-title u-font-xs u-block u-mb-0">
+        {format}:
       </span>
-      <span className="u-visually-hidden">: </span>
+      <span className="press-title u-font-lg u-block">
+        <strong>{title}</strong>{" "}
+        <span className="u-font-sm">({date})</span>
+      </span>
       <a
         href={url}
         className="press-link u-block u-mb-md"
@@ -44,11 +47,6 @@ function generatePressItem(format, url, title, date) {
       >
         {getBaseUrlFromString(url)}
       </a>
-      <span className="u-visually-hidden">; </span>
-      <span className="press-title u-font-lg u-block">
-        <strong>{title}</strong>{" "}
-        <span className="u-font-md">({date})</span>
-      </span>
     </li>
   );
 }

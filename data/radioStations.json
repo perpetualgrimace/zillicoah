@@ -1,14 +1,4 @@
 [
-  { "name": "Buzz Radio Asheville", "country": "US" },
-  { "name": "Lonely Oak Radio", "country": "US" },
-  { "name": "Eagles Nest Radio", "country": "US" },
-  { "name": "Static X Radio", "country": "US" },
-  { "name": "Metal Cross Radio", "country": "US" },
-  { "name": "ERB Radio", "country": "UK" },
-  { "name": "East London Radio", "country": "UK" },
-  { "name": "Belter Radio", "country": "UK" },
-  { "name": "Radio Wigwam", "country": "UK" },
-  { "name": "TTIAO Radio", "country": "UK" },
-  { "name": "Radio TFSC", "country": "Germany" },
-  { "name": "Only Rock Radio", "country": "Spain" }
+  { "name": "103.3 Asheville FM", "country": "US" },
+  { "name": "98.1 The River", "country": "US" }
 ]

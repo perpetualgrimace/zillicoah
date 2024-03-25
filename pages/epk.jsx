@@ -4,7 +4,7 @@ import {
 } from "/components/layout/components/Meta";
 
 import HeroSection from "/components/layout/components/HeroSection";
-import ImgTextSection from "/components/layout/components/ImgTextSection";
+import TextSection from "/components/layout/components/TextSection";
 import PressSection from "/components/layout/components/PressSection";
 import GallerySection from "/components/layout/components/GallerySection";
 import ShowsSection from "/components/layout/components/ShowsSection";
@@ -15,21 +15,36 @@ export default function EPK() {
     <>
       {setTitle("Press kit")}
       <HeroSection title="Press Kit" pageSlug="epk" />
-      <ImgTextSection title="You won’t be bored" imgSrc="thumbnail/epk-1">
-        <p>
-          Zillicoah is a genre-bending rock and/or metal band from
-          Asheville, NC. With a sound that mixes big riffs, soaring vocal
-          melodies, and just enough technicality to keep you on your toes,
-          we make music for fans of bands like Thrice, Cave In, A Perfect
-          Circle, and Coheed & Cambria.
+      <TextSection>
+        <p className="u-subhead">
+          Zillicoah is a post-punk trio helmed by guitarist and songwriter
+          Rome Widenhouse with Andrew Breeden (bass) and
+          Brandon Ball (drums).
         </p>
         <p>
-          Since starting as the solo project of James Ferrell in late
-          2021, the band has been busy playing shows, festivals, and
-          weekend tours in multiple states and cities, and our songs have
-          been played on the air in multiple countries.
+          Zillicoah incorporates elements of Post-Hardcore, Folk, and
+          Alternative Rock to create an electrified, enigmatic sound.
         </p>
-      </ImgTextSection>
+        <p>
+          While Zillicoah's sound contains the post-punk hallmarks of
+          distorted guitars, anthemic vocals and blistering drums, the
+          band takes a distinctly postmodern approach to song structure.
+          What sets Zillicoah apart is their willingness to experiment and
+          re-combine familiar genre elements into new music for the
+          modern age.
+        </p>
+        <p>
+          Since the band’s inception in 2020, Zillicoah has released a
+          string of EPs and Singles.
+        </p>
+        <p>
+          Zillicaoh’s debut LP, Kudzu, was released in August of 2023,
+          accompanied by a music video for the third single, Lobera.
+          Zillicoah’s sophomore album has been independently recorded and
+          is slated for release in late 2024. The band is currently based
+          in Asheville, NC.
+        </p>
+      </TextSection>
       <StationsSection />
       <PressSection />
       <GallerySection />

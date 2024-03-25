@@ -3,25 +3,8 @@
   z-index: 1;
 }
 
-.press-list {
-  margin-bottom: -4px;
-
-  @media (min-width: 666px) {
-    column-width: 26rem;
-    column-gap: 4px;
-  }
-  @media (min-width: 1920px) {
-    column-width: auto;
-    columns: 3;
-  }
-}
-
 .press-item {
-  display: flex;
-  flex-direction: column;
   padding: $sp-lg;
-  margin-bottom: 4px;
-  min-height: 11rem;
 }
 
 .press-title {
