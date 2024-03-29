@@ -1,15 +1,12 @@
 import RetinaImg from "/components/common/RetinaImg";
 
 export default function HeroSection(props) {
-  const { slug, pageSlug, title, subhead, children } = props;
+  const { pageSlug, title, subhead, children } = props;
   return (
-    <section
-      className={`hero-section ${pageSlug}-hero-section`}
-      id={slug || "hero-section"}
-    >
+    <section className={`hero-section ${pageSlug}-hero-section`}>
       <RetinaImg
         className="hero-img u-mb-lg"
-        file="hero/hero"
+        file={`hero/hero-${pageSlug === "home" ? "home" : "default"}`}
         extension="jpg"
       />
 
