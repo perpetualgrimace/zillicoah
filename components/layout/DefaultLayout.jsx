@@ -3,10 +3,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default function DefaultLayout(props) {
-  const { title, slug, children } = props;
+  const { title, children } = props;
 
   return (
-    <div className={`${slug}-layout default-layout`}>
+    <div className="default-layout">
       <Meta
         pageTitle={title}
         description="Appalachian post-punk with undeniable 90s influence"
@@ -15,7 +15,7 @@ export default function DefaultLayout(props) {
       <Navbar />
 
       <main className="main" id="#main" tabIndex="-1">
-        <div className={`${slug}-wrapper wrapper`}>{children}</div>
+        <div className="wrapper">{children}</div>
       </main>
 
       <Footer />
