@@ -1,0 +1,30 @@
+.sidebar-section {
+  padding-top: 0;
+}
+
+.sidebar-section-inner {
+  @media (max-width: 719px) {
+    .sidebar-section-aside {
+      margin-top: $sp-xl * 1.5;
+    }
+  }
+  @media (min-width: 720px) {
+    display: flex;
+
+    .sidebar-section-main {
+      margin-right: $sp-xxl * 1.5;
+    }
+    .sidebar-section-aside {
+      min-width: 20rem;
+    }
+  }
+}
+
+.sidebar-section-main > *:not([class*="u-font-"]) {
+  font-size: inherit;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}

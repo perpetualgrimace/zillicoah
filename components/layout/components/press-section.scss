@@ -4,7 +4,6 @@
 }
 
 .press-item {
-  padding: $sp-lg;
 }
 
 .press-title {
@@ -14,7 +13,6 @@
 .press-link {
   position: static;
   order: 1;
-  margin-top: $sp-sm;
 
   &:before {
     @include pseudo;
