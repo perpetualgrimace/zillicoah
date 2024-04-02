@@ -9,7 +9,7 @@ export default function ShowItem(props) {
         </span>
         <span className="show-meta u-font-md u-mb-sm">
           {venue} <span className="u-visually-hidden"> in </span>
-          <span className="show-meta-separator" ariaHidden>
+          <span className="show-meta-separator" aria-hidden>
             •
           </span>{" "}
           {city}
