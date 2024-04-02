@@ -2,5 +2,43 @@
   "bandsintownApiUrl": "https://rest.bandsintown.com/artists/The%20Welcoming/events?app_id=0b7393079f2b9580f1ad809ea91ebb9b",
   "bandsintownLink": "https://www.bandsintown.com/a/15530189-zillicoah",
   "songkickLink": "https://www.songkick.com/artists/10179674-zillicoah",
-  "facebookEventsLink": "https://www.facebook.com/zillicoahmusic/events"
+  "facebookEventsLink": "https://www.facebook.com/zillicoahmusic/events",
+  "upcoming": [
+    {
+      "datetime": "2024-04-07T19:00:00",
+      "venue": {
+        "name": "The Odd",
+        "location": "Asheville, NC"
+      },
+      "url": "https://www.bandsintown.com/e/105304171-zillicoah-at-the-odditorium",
+      "id": "show-1"
+    },
+    {
+      "datetime": "2024-04-19T19:00:00",
+      "venue": {
+        "name": "The Odd",
+        "location": "Asheville, NC"
+      },
+      "url": "https://www.bandsintown.com/e/105320077-zillicoah-at-the-odditorium",
+      "id": "show-3"
+    },
+    {
+      "datetime": "2024-05-11T19:00:00",
+      "venue": {
+        "name": "The Hideaway",
+        "location": "Johnson City, TN"
+      },
+      "url": "https://www.bandsintown.com/e/105320153-zillicoah-at-the-hideaway",
+      "id": "show-4"
+    },
+    {
+      "datetime": "2024-05-12T19:00:00",
+      "venue": {
+        "name": "Fleetwood’s",
+        "location": "Asheville, NC"
+      },
+      "url": "https://www.bandsintown.com/e/105320176-zillicoah-at-fleetwood's",
+      "id": "show-2"
+    }
+  ]
 }

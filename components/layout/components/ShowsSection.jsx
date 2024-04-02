@@ -1,33 +1,35 @@
 import { useEffect, useState } from "react";
 
 import showURLs from "/data/shows.json";
-const { bandsintownApiUrl, bandsintownLink } = showURLs;
+const { bandsintownApiUrl, bandsintownLink, upcoming } = showURLs;
 
 import ShowItem from "/components/layout/components/ShowItem";
 
 export default function ShowsSection() {
-  const [upcoming, setUpcoming] = useState([]);
+  // const [upcoming, setUpcoming] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch(bandsintownApiUrl, {
-        next: { revalidate: 86400 },
-      });
-      let data;
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await fetch(bandsintownApiUrl, {
+  //       next: { revalidate: 86400 },
+  //     });
+  //     let data;
 
-      if (!response.ok) {
-        console.log("error: bandsintown API down or no upcoming shows");
-        return null;
-      }
+  //     if (!response.ok) {
+  //       console.log("error: bandsintown API down or no upcoming shows");
+  //       return null;
+  //     }
 
-      data = await response.json();
-      // if (data?.length > 4) data.length = 4;
-      setUpcoming(data);
-    }
-    fetchData();
-  }, []);
+  //     data = await response.json();
+  //     // if (data?.length > 4) data.length = 4;
+  //     setUpcoming(data);
+  //   }
+  //   fetchData();
+  // }, []);
 
   if (!upcoming || !upcoming.length) return null;
+
+  const currDate = new Date();
 
   return (
     <section className="shows-section padded-section">
@@ -43,20 +45,26 @@ export default function ShowsSection() {
         </div>
 
         <ul className="shows-list">
-          {upcoming.map((show, i) => (
-            <ShowItem
-              date={new Date(show.datetime).toLocaleDateString("en-US", {
-                weekday: "long",
-                month: "long",
-                day: "numeric",
-              })}
-              venue={show.venue.name}
-              city={show.venue.location}
-              href={show.url}
-              index={i}
-              key={show.id}
-            />
-          ))}
+          {upcoming.map((show, i) => {
+            const showDate = new Date(show.datetime);
+
+            if (showDate < currDate) return null;
+
+            return (
+              <ShowItem
+                date={showDate.toLocaleDateString("en-US", {
+                  weekday: "long",
+                  month: "long",
+                  day: "numeric",
+                })}
+                venue={show.venue.name}
+                city={show.venue.location}
+                href={show.url}
+                index={i}
+                key={show.id}
+              />
+            );
+          })}
         </ul>
       </div>
     </section>
