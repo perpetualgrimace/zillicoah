@@ -118,7 +118,7 @@ export default function Navbar() {
           <li className="navbar-player-wrapper">
             <iframe
               style={{ border: "none", width: "100%", height: "42px" }}
-              src="https://bandcamp.com/EmbeddedPlayer/album=1312496295/size=small/bgcol=000000/linkcol=DF854B/transparent=true/artwork=none"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1312496295/size=small/bgcol=000000/linkcol=DF854B/transparent=true"
               seamless
               tabIndex="-1"
             />
